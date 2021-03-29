@@ -80,7 +80,7 @@ async def HelpWatermark(bot, cmd):
 			if user.status == "kicked":
 				await bot.send_message(
 					chat_id=cmd.from_user.id,
-					text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+					text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/VKP_BOTS).",
 					parse_mode="markdown",
 					disable_web_page_preview=True
 				)
@@ -113,7 +113,7 @@ async def HelpWatermark(bot, cmd):
 	await cmd.reply_text(
 		text=Config.USAGE_WATERMARK_ADDER,
 		parse_mode="Markdown",
-		reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Developer", url="https://t.me/AbirHasan2005"), InlineKeyboardButton("Support Group", url="https://t.me/linux_repo")], [InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")], [InlineKeyboardButton("Source Code", url="https://github.com/AbirHasan2005/Watermark-Bot")]]),
+		reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Updates Channel", url="https://t.me/VKPROJECTS"), InlineKeyboardButton("Support Group", url="https://t.me/VKP_BOTS")]]),
 		disable_web_page_preview=True
 	)
 
@@ -132,7 +132,7 @@ async def VidWatermarkSaver(bot, cmd):
 			if user.status == "kicked":
 				await bot.send_message(
 					chat_id=cmd.from_user.id,
-					text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+					text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/VKP_BOTS).",
 					parse_mode="markdown",
 					disable_web_page_preview=True
 				)
@@ -157,7 +157,7 @@ async def VidWatermarkSaver(bot, cmd):
 		except Exception:
 			await bot.send_message(
 				chat_id=cmd.from_user.id,
-				text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
+				text="Something went Wrong. Contact my [Support Group](https://t.me/VKP_BOTS).",
 				parse_mode="markdown",
 				disable_web_page_preview=True
 			)
@@ -202,7 +202,7 @@ async def VidWatermarkAdder(bot, cmd):
 			if user.status == "kicked":
 				await bot.send_message(
 					chat_id=cmd.from_user.id,
-					text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+					text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/VKP_BOTS).",
 					parse_mode="markdown",
 					disable_web_page_preview=True
 				)
@@ -374,7 +374,7 @@ async def VidWatermarkAdder(bot, cmd):
 			height=height,
 			reply_to_message_id=cmd.message_id,
 			supports_streaming=True,
-			reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Developer", url="https://t.me/AbirHasan2005")], [InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")], [InlineKeyboardButton("Support Group", url="https://t.me/linux_repo")]]),
+			reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Updates Channel", url="https://t.me/VKPROJECTS"), InlineKeyboardButton("Support Group", url="https://t.me/VKP_BOTS")]]),
 			progress=progress_for_pyrogram,
 			progress_args=(
 				"Uploading, Wait Sir ...",
@@ -398,8 +398,8 @@ async def VidWatermarkAdder(bot, cmd):
 			height=height,
 			reply_to_message_id=cmd.message_id,
 			supports_streaming=True,
-			reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Developer", url="https://t.me/AbirHasan2005")], [InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")], [InlineKeyboardButton("Support Group", url="https://t.me/linux_repo")]]),
-			progress=progress_for_pyrogram,
+			reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Updates Channel", url="https://t.me/VKPROJECTS"), InlineKeyboardButton("Support Group", url="https://t.me/VKP_BOTS")]]),
+                        progress=progress_for_pyrogram,
 			progress_args=(
 				"Uploading, Wait Sir ...",
 				editable,
@@ -534,7 +534,7 @@ async def button(bot, cmd: CallbackQuery):
 				user = await bot.get_chat_member(int(Config.UPDATES_CHANNEL), cmd.message.chat.id)
 				if user.status == "kicked":
 					await cmd.message.edit(
-						text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+						text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/VKP_BOTS).",
 						parse_mode="markdown",
 						disable_web_page_preview=True
 					)
@@ -557,7 +557,7 @@ async def button(bot, cmd: CallbackQuery):
 				return
 			except Exception:
 				await cmd.message.edit(
-					text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
+					text="Something went Wrong. Contact my [Support Group](https://t.me/VKP_BOTS).",
 					parse_mode="markdown",
 					disable_web_page_preview=True
 				)
@@ -565,7 +565,7 @@ async def button(bot, cmd: CallbackQuery):
 		await cmd.message.edit(
 			text=Config.USAGE_WATERMARK_ADDER,
 			parse_mode="Markdown",
-			reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Developer", url="https://t.me/AbirHasan2005"), InlineKeyboardButton("Support Group", url="https://t.me/linux_repo")], [InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")]]),
+			reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Updates Channel", url="https://t.me/VKPROJECTS"), InlineKeyboardButton("Support Group", url="https://t.me/VKP_BOTS")]]),
 			disable_web_page_preview=True
 		)
 
